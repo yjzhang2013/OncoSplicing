@@ -135,13 +135,13 @@ if (chunkI==0){
     psiGDC <- gr.psi[,c("tissueType",row.names(infoGDC))]
     inReadGDC <- gr.inRead[,c("tissueType",row.names(infoGDC))]
     outReadGDC <- gr.outRead[,c("tissueType",row.names(infoGDC))]
-    save(infoGDC,psiGDC,inReadGDC,outReadGDC,file=paste("/home/u1357/RNAseq/pancan/gdcAS/tcga3/temp_psi_read_info_fix_",i,".Rdata",sep=""),compress = T)
+    save(infoGDC,psiGDC,inReadGDC,outReadGDC,file=paste("/home/RNAseq/pancan/gdcAS/tcga3/temp_psi_read_info_fix_",i,".Rdata",sep=""),compress = T)
   }
 }else{
   ## load data and plot
-  load(file=paste("/home/u1357/RNAseq/pancan/temp_psi_read_info_fix_",chunkI,".Rdata",sep=""))
+  load(file=paste("/home/RNAseq/pancan/temp_psi_read_info_fix_",chunkI,".Rdata",sep=""))
   ase <- infoGDC$SpliceEvent
-  aseDone <- readRDS(file="/home/u1357/RNAseq/pancan/asePanPlotDone.rds")
+  aseDone <- readRDS(file="/home/RNAseq/pancan/asePanPlotDone.rds")
   ase <- ase[!ase%in%aseDone]
   sapply(ase,panplot)
 }
