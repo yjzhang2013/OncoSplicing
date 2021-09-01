@@ -62,7 +62,7 @@ panplot <- function(ase){
   tissueTypeN <- paste(nPSI$cancerType," (",nPSI$nValue,")",sep="")
   
   title=ase
-  outFilePath <- paste("/home/u1357/RNAseq/pancan/spliceSeq/panplot/fix/",ase,".pdf",sep="")
+  outFilePath <- paste("/home/RNAseq/pancan/spliceSeq/panplot/fix/",ase,".pdf",sep="")
   pdf(file=outFilePath,width=9,height=3.5,onefile = T)
   p<-ggplot(dfp,aes(x=tissueType,y=value,fill=tissueType)) +
     stat_boxplot(geom = "errorbar",width=0.3,color="grey20",size=0.2)+
@@ -95,9 +95,9 @@ if (chunkI==0){
   chunkSize <- nrow(aseAll)%/%chunkN
   chunkLast <- chunkSize + nrow(aseAll)%%chunkN
   aseAll$chunk <- c(rep(1:(chunkN-1),each=chunkSize),rep(chunkN,chunkLast))
-  saveRDS(aseAll,file="/home/u1357/RNAseq/pancan/spliceSeq/psiData/aseAll_panplot_psi.rds")
+  saveRDS(aseAll,file="/home/RNAseq/pancan/spliceSeq/psiData/aseAll_panplot_psi.rds")
   
-  gr.info <- readRDS(file="/home/u1357/RNAseq/pancan/spliceSeq/psiData/aseAll_panplot_psi.rds")
+  gr.info <- readRDS(file="/home/RNAseq/pancan/spliceSeq/psiData/aseAll_panplot_psi.rds")
   gr.psi <- readRDS(file="./data_psi_33_cancer_types.rds")
   gr.info <- split(gr.info,gr.info$chunk)
   #i=1
