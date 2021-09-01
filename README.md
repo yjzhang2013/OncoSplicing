@@ -9,16 +9,22 @@ Recently, we have updated the OncoSplicing database. Code under OncoSplicing/v2/
 Given the similarity of code used in these two projects, the code related to the SplAdder project were more representative, including:
 1. spladder_kmplot.R  
   code to perform Kaplen Meire plot for overall survial (OS) or progression free interval (PFI) 
+
 2. spladder_tnplot.R  
   code to plot PSI difference between tumour and adjacent normal or GTEx normal tissues       
-3. spladder_ciplot_survival.R 
+
+3. spladder_ciplot_survival.R   
   code to perform Kaplen Meire plot for OS, PFI, DFI (disease free interval) or DSS (disease specific survial)
+
 4. spladder_ciplot_boxplot.R  
   code to plot PSI difference between two groups of a clinical indicator 
-5. spladder_panplot.R 
+
+5. spladder_panplot.R   
   code to plot PSI distribution in pan-cancer view       
+
 6. spladder_pancox.R  
   code to plot result of CoxPH analysis in pan-cancer view 
+
 7. spladder_pandiff.R  
   code to plot PSI difference in pan-cancer view 
 
