@@ -40,6 +40,6 @@ Code related to the SpliceSeq project can also be obtained under **OncoSplicing/
 
 citation:
 
-![1. Zhang Yangjun, Yan Libin, Zeng Jin, Zhou Hui, Liu Haoran, Yu Gan, Yao Weimin, Chen Ke, Ye Zhangqun, Xu Hua*. Pan-cancer analysis of clinical relevance of alternative splicing events in 31 human cancers. Oncogene.2019 Oct;38(40):6678-6695.](doi:10.1038/s41388-019-0910-7)
+1. Zhang Yangjun, Yan Libin, Zeng Jin, Zhou Hui, Liu Haoran, Yu Gan, Yao Weimin, Chen Ke, Ye Zhangqun, Xu Hua*. Pan-cancer analysis of clinical relevance of alternative splicing events in 31 human cancers. Oncogene.2019 Oct;38(40):6678-6695.
 
-![2.OncoSplicing: an updated database for clinically relevant alternative splicing in 33 human cancers](www.oncosplicing.com)
+2.OncoSplicing: an updated database for clinically relevant alternative splicing in 33 human cancers.
