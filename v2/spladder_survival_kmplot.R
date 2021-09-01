@@ -13,8 +13,8 @@ argv <- parse_args(p)
 chunkN <- as.numeric(argv$chunkN)
 chunkI <- as.numeric(argv$chunkI)
 
-fileDir <- "/home/u1357/RNAseq/pancan/webdata/spladder/survival/"
-outDir <- "/home/u1357/RNAseq/pancan/webdata/spladder/ciplots/"
+fileDir <- "/home/RNAseq/pancan/webdata/spladder/survival/"
+outDir <- "/home/RNAseq/pancan/webdata/spladder/ciplots/"
 
 if (file.exists(outDir)==FALSE){
   dir.create(outDir,recursive = T)
@@ -25,7 +25,6 @@ infoAS$types <- paste(infoAS$cancerType,infoAS$survType,sep="_")
 infoAS$infos <- paste(infoAS$cancerType,infoAS$Gene_Symbol,infoAS$SpliceEvent,infoAS$CI_Type,sep=";")
 infoAS$idType <- paste(infoAS$Gene_Symbol,infoAS$SpliceEvent,sep="_")
 
-cTypePFI <- c("PCPG_PFI","PRAD_PFI","TGCT_PFI","THCA_PFI","THYM_PFI")
 infoAS <- infoAS[order(infoAS$cancerType,infoAS$survType,infoAS$SpliceEvent),]
 
 chunkSize <- nrow(infoAS)%/%chunkN
