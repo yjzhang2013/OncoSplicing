@@ -20,7 +20,7 @@ if (file.exists(outDir)==FALSE){
   dir.create(outDir,recursive = T)
 }
 
-infoAS <- readRDS(file="/home/u1357/RNAseq/pancan/webdata/spladder/spladder_sase_med_all_survtype.rds")
+infoAS <- readRDS(file="/home/RNAseq/pancan/webdata/spladder/spladder_sase_med_all_survtype.rds")
 infoAS$types <- paste(infoAS$cancerType,infoAS$survType,sep="_")
 infoAS$infos <- paste(infoAS$cancerType,infoAS$Gene_Symbol,infoAS$SpliceEvent,infoAS$CI_Type,sep=";")
 infoAS$idType <- paste(infoAS$Gene_Symbol,infoAS$SpliceEvent,sep="_")
