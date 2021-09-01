@@ -29,7 +29,7 @@ Given the similarity of code used in these two projects, the code related to the
   code to plot PSI difference in pan-cancer view 
 
 
-Code related to the SpliceSeq project can also be obtained under the directory OncoSplicing/v2/spliceseq/, including:
+Code related to the SpliceSeq project can also be obtained under **OncoSplicing/v2/spliceseq/**, including:
 1. spliceseq_kmplot.R
 2. spliceseq_tnplot.R
 3. spliceseq_ciplot_survival.R
