@@ -50,9 +50,11 @@ colorXText <- c(colx,colg)
 panplot <- function(ase){
   title=infoGDC[ase,"idType"]
   outFilePath <- paste("/home/RNAseq/pancan/panplot/",ase,".pdf",sep="")
+  infoX <- infoAll[infoAll$SpliceEvent==ase,]
   
   dfp <- psiGDC[,c("tissueType",ase)]
   names(dfp)[2] <- "value"
+  dfp[!gsub("-N","",gsub("-T","",dfp$tissueType))%in%infoX$tissueType,"value"] <- NA
   naSample <- row.names(dfp[is.na(dfp$value),])
   dfp$type <- "PSI value"
   
@@ -140,8 +142,9 @@ if (chunkI==0){
 }else{
   ## load data and plot
   load(file=paste("/home/RNAseq/pancan/temp_psi_read_info_fix_",chunkI,".Rdata",sep=""))
+  infoAll <- readRDS(file="/home/RNAseq/pancan/spladder_infoAllTis_tcga_gtex.rds")
   ase <- infoGDC$SpliceEvent
-  aseDone <- readRDS(file="/home/RNAseq/pancan/asePanPlotDone.rds")
-  ase <- ase[!ase%in%aseDone]
+  #aseDone <- readRDS(file="/home/RNAseq/pancan/asePanPlotDone.rds")
+  #ase <- ase[!ase%in%aseDone]
   sapply(ase,panplot)
 }
