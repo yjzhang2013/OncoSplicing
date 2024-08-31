@@ -4,7 +4,7 @@ The code related to the database OncoSplicing (www.oncosplicing.com).
 
 The OncoSplicing database was initially released in 2019 for visualization of survival associated alternative splicing for cancers in the TCGA SpliceSeq project, which was presented in our previous paper (https://doi.org/10.1038/s41388-019-0910-7). The code under **OncoSplicing/v1/** were two pieces of code related to survival analysis and consuse clustering analysis used in the Pan-cancer analysis. 
 
-Recently, we have updated the OncoSplicing database. Code under **OncoSplicing/v2/** were used in visualization of clinically relevant alternative splicing in the SpliceSeq and SplAdder project.
+The code under **OncoSplicing/v2/** were used in visualization of clinically relevant alternative splicing in the SpliceSeq and SplAdder project.
 
 Given the similarity of code used in these two projects, the code related to the SplAdder project were more representative, including:
 1. spladder_kmplot.R  
@@ -37,6 +37,40 @@ Code related to the SpliceSeq project can also be obtained under **OncoSplicing/
 5. spliceseq_panplot.R
 6. spliceseq_pancox.R
 7. spliceseq_pandiff.R
+
+
+
+Recently, we have updated the OncoSplicing database. Code under **OncoSplicing/v3/** were used in visualization of the relationship between RBPs and alternative splicing in cancers.
+1. mapas_plot.R
+    code to perform tracks plot to visulizaion the relative location of RNA binding motifs or eCLIP-seq peaks 
+    of RBPs to the structured AS event
+   
+2. encode_plot.R
+    code to perform tracks and sashimi plot to visulizaion signal difference between normal contorl and RBP 
+    perturbation samples
+   
+3. encode_rbp.R
+    code to perform volcano plot for visulizaion of the PSI difference and significance of the queried AS event 
+    in different RBPs perturbation experiments.
+   
+4. encode_event.R
+    code to perform volcano plot for visulizaion of  the PSI difference and significance of all regulated AS 
+    events after perturbation of the queried RBP
+   
+5. coexp_table.R
+     code to perform correlation analyses between the queried AS event and RBP in TCGA cancers or GTEx tissues
+   
+6. coexp_plot.R
+     code to perform scatter plot for visulizaion of correlation result between the queried AS event and RBP in 
+     a cancer/tissue type
+    
+7. script/encode_vis.R
+     code to perform tracks plot that was refferenced by the mapas_plot.R and encode_plot.R
+    
+8. script/geom_arch.R
+     code to perform tracks plot that was refferenced by the mapas_plot.R and encode_plot.R
+
+
 
 citation:
 
