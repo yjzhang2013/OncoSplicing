@@ -65,7 +65,7 @@ Recently, we have updated the OncoSplicing database. Code under **OncoSplicing/v
      a cancer/tissue type
     
 7. script/encode_vis.R
-     code to perform tracks plot that was refferenced by the mapas_plot.R and encode_plot.R
+     code to perform tracks plot that was refferenced by the mapas_plot.R and encode_plot.R.
      this code was a modification of BioSeqUtils, full code can be found at https://github.com/junjunlab/BioSeqUtils.
     
 9. script/geom_arch.R
