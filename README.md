@@ -76,4 +76,4 @@ citation:
 
 1. Zhang Yangjun, Yan Libin, Zeng Jin, Zhou Hui, Liu Haoran, Yu Gan, Yao Weimin, Chen Ke, Ye Zhangqun, Xu Hua*. Pan-cancer analysis of clinical relevance of alternative splicing events in 31 human cancers. Oncogene.2019 Oct;38(40):6678-6695. 
 
-2. OncoSplicing: an updated database for clinically relevant alternative splicing in 33 human cancers.
+2. Zhang Yangjun, Yao Xiangyang, Zhou Hui, Wu Xiaoliang, Tian Jianbo, Zeng Jin, Yan Libin, Duan Chen, Liu Haoran, Li Heng, Chen Ke, Hu Zhiquan, Ye Zhangqun, Xu Hua*. OncoSplicing: an updated database for clinically relevant alternative splicing in 33 human cancers. Nucleic Acids Res. 2021 Sep 23:gkab851. doi: 10.1093/nar/gkab851.
